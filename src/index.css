@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+}
+.font-yantra {
+  font-family: "Yantramanav", sans-serif;
+}
+
+.font-inter {
+  font-family: "inter", sans-serif;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
