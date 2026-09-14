@@ -50,56 +50,119 @@ const WhoShould = () => {
   ];
 
   return (
-    <section className="relative w-full overflow-hidden bg-[#f0f2ff] py-[45px]">
+    <section className="relative w-full overflow-hidden bg-[#f0f2ff] py-[45px] sm:py-[50px] lg:py-[45px]">
       {/* ================= BACKGROUND DECORATION ================= */}
 
       {/* Right Lines */}
-      <div className="absolute top-0 right-[10px] flex gap-[8px] opacity-60">
-        <div className="w-[12px] h-[105px] rounded-b-full bg-[#dce3ff]" />
-        <div className="w-[12px] h-[138px] rounded-b-full bg-[#dce3ff]" />
-        <div className="w-[12px] h-[165px] rounded-b-full bg-[#dce3ff]" />
-        <div className="w-[12px] h-[140px] rounded-b-full bg-[#dce3ff]" />
+      <div className="absolute top-0 right-[5px] sm:right-[10px] flex gap-[5px] sm:gap-[8px] opacity-60">
+        <div className="w-[7px] sm:w-[12px] h-[80px] sm:h-[105px] rounded-b-full bg-[#dce3ff]" />
+        <div className="w-[7px] sm:w-[12px] h-[105px] sm:h-[138px] rounded-b-full bg-[#dce3ff]" />
+        <div className="w-[7px] sm:w-[12px] h-[125px] sm:h-[165px] rounded-b-full bg-[#dce3ff]" />
+        <div className="w-[7px] sm:w-[12px] h-[105px] sm:h-[140px] rounded-b-full bg-[#dce3ff]" />
       </div>
 
       {/* Bottom Left Lines */}
-      <div className="absolute bottom-[18px] left-0 flex flex-col gap-[8px] opacity-70">
-        <div className="w-[348px] h-[13px] rounded-r-full bg-[#dce3ff]" />
-        <div className="w-[292px] h-[13px] rounded-r-full bg-[#dce3ff]" />
-        <div className="w-[222px] h-[13px] rounded-r-full bg-[#dce3ff]" />
+      <div className="absolute bottom-[18px] left-0 flex flex-col gap-[6px] sm:gap-[8px] opacity-70">
+        <div className="w-[220px] sm:w-[300px] lg:w-[348px] h-[9px] sm:h-[13px] rounded-r-full bg-[#dce3ff]" />
+        <div className="w-[185px] sm:w-[250px] lg:w-[292px] h-[9px] sm:h-[13px] rounded-r-full bg-[#dce3ff]" />
+        <div className="w-[140px] sm:w-[190px] lg:w-[222px] h-[9px] sm:h-[13px] rounded-r-full bg-[#dce3ff]" />
       </div>
 
       {/* ================= MAIN CONTENT ================= */}
 
-      <div className="relative z-10 max-w-[1050px] mx-auto flex items-center justify-between">
+      <div
+        className="
+          relative z-10
+          w-full
+          max-w-[1050px]
+          mx-auto
+          px-5
+          sm:px-8
+          lg:px-0
+          flex
+          flex-col
+          lg:flex-row
+          items-center
+          lg:items-center
+          justify-between
+          gap-[35px]
+          lg:gap-0
+        "
+      >
         {/* ================= LEFT ================= */}
 
-        <div className="w-[385px]">
-          <h2 className="text-[40px] leading-[44px] font-bold text-[#263675]">
+        <div className="w-full lg:w-[385px] text-center lg:text-left">
+          <h2
+            className="
+              font-yantra
+              text-[32px]
+              sm:text-[38px]
+              lg:text-[40px]
+              leading-[36px]
+              sm:leading-[42px]
+              lg:leading-[44px]
+              font-bold
+              text-[#263675]
+            "
+          >
             Who Should
             <br />
             <span className="text-[#fca311]">Do This Program?</span>
           </h2>
 
-          <p className="mt-[12px] w-[345px] text-[11px] leading-[15px] text-[#222]">
+          <p
+            className="
+              font-yantra
+              mt-[12px]
+              w-full
+              max-w-[345px]
+              mx-auto
+              lg:mx-0
+              text-[12px]
+              sm:text-[13px]
+              lg:text-[11px]
+              leading-[17px]
+              lg:leading-[15px]
+              text-[#222]
+            "
+          >
             This program helps anyone learn and grow in data science and
             artificial intelligence, no matter their background.
           </p>
 
           {/* Download Button */}
 
-          <div className="flex items-center mt-[20px]">
+          <div className="flex items-center justify-center lg:justify-start mt-[20px]">
             <button
-              className="h-[40px] w-[190px] rounded-full
-              bg-[#273878] text-white
-              font-semibold text-[14px]"
+              className="
+                h-[40px]
+                w-[190px]
+                rounded-full
+                bg-[#273878]
+                text-white
+                font-yantra
+                font-semibold
+                text-[14px]
+                hover:bg-[#1e2d65]
+                transition
+              "
             >
               Download Brochure
             </button>
 
             <button
-              className="w-[40px] h-[40px] rounded-full
-              bg-[#273878] flex items-center justify-center
-              -ml-[1px]"
+              className="
+                w-[40px]
+                h-[40px]
+                rounded-full
+                bg-[#273878]
+                flex
+                items-center
+                justify-center
+                -ml-[1px]
+                hover:bg-[#1e2d65]
+                transition
+              "
             >
               <ArrowUpRight size={19} className="text-white" />
             </button>
@@ -108,31 +171,67 @@ const WhoShould = () => {
 
         {/* ================= RIGHT GRID ================= */}
 
-        <div className="w-[500px] grid grid-cols-3 gap-[15px]">
+        <div
+          className="
+            w-full
+            max-w-[500px]
+            grid
+            grid-cols-2
+            lg:grid-cols-3
+            gap-[12px]
+            sm:gap-[15px]
+          "
+        >
           {audience.map((item, index) => {
             const Icon = item.icon;
 
             return (
               <div
                 key={index}
-                className={`h-[141px] rounded-[9px]
-                flex flex-col items-center justify-center
-                text-center shadow-[0_3px_8px_rgba(0,0,0,0.08)]
-                ${
-                  item.dark
-                    ? "bg-[#253477] text-white"
-                    : "bg-[#5b74d1] text-white"
-                }`}
+                className={`
+                  w-full
+                  h-[130px]
+                  sm:h-[141px]
+                  rounded-[9px]
+                  flex
+                  flex-col
+                  items-center
+                  justify-center
+                  text-center
+                  shadow-[0_3px_8px_rgba(0,0,0,0.08)]
+                  transition-transform
+                  duration-200
+                  hover:-translate-y-[3px]
+                  ${
+                    item.dark
+                      ? "bg-[#253477] text-white"
+                      : "bg-[#5b74d1] text-white"
+                  }
+                `}
               >
                 {/* Icon */}
 
                 <div className="mb-[8px]">
-                  <Icon size={32} strokeWidth={2.2} className="text-white" />
+                  <Icon
+                    size={30}
+                    strokeWidth={2.2}
+                    className="text-white sm:w-[32px] sm:h-[32px]"
+                  />
                 </div>
 
                 {/* Title */}
 
-                <p className="text-[12px] leading-[15px] font-semibold px-[8px]">
+                <p
+                  className="
+                    font-yantra
+                    text-[12px]
+                    sm:text-[13px]
+                    leading-[15px]
+                    sm:leading-[16px]
+                    font-semibold
+                    px-[8px]
+                  "
+                >
                   {item.title}
                 </p>
               </div>

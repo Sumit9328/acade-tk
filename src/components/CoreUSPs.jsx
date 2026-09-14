@@ -55,49 +55,111 @@ const CoreUSPs = () => {
   ];
 
   return (
-    <section className="w-full bg-white py-[48px]">
-      <div className="max-w-[1050px] mx-auto">
+    <section className="w-full bg-white py-[40px] sm:py-[48px]">
+      <div
+        className="
+          w-full
+          max-w-[1050px]
+          mx-auto
+          px-5
+          sm:px-8
+          lg:px-0
+        "
+      >
+        {/* ================= HEADING ================= */}
 
-        {/* Heading */}
-        <h2 className="text-[30px] leading-[36px] font-bold text-[#273878]">
-          Core USPs Of{" "}
-          <span className="text-[#fca311]">This</span>
+        <h2
+          className="
+            font-yantra
+            text-[26px]
+            sm:text-[30px]
+            leading-[31px]
+            sm:leading-[36px]
+            font-bold
+            text-[#273878]
+          "
+        >
+          Core USPs Of <span className="text-[#fca311]">This</span>
           <br />
           <span className="text-[#fca311]">Program</span>
         </h2>
 
-        {/* USP Grid */}
-        <div className="grid grid-cols-4 gap-[15px] mt-[22px]">
+        {/* ================= USP GRID ================= */}
 
+        <div
+          className="
+            grid
+            grid-cols-1
+            sm:grid-cols-2
+            lg:grid-cols-4
+            gap-[12px]
+            sm:gap-[15px]
+            mt-[22px]
+          "
+        >
           {uspData.map((item, index) => {
             const Icon = item.icon;
 
             return (
               <div
                 key={index}
-                className="h-[217px] border border-[#e5e5e5] rounded-[7px] flex flex-col items-center justify-center text-center"
+                className="
+                  w-full
+                  h-[190px]
+                  sm:h-[205px]
+                  lg:h-[217px]
+                  border
+                  border-[#e5e5e5]
+                  rounded-[7px]
+                  flex
+                  flex-col
+                  items-center
+                  justify-center
+                  text-center
+                  px-[15px]
+                  transition-all
+                  duration-200
+                  hover:-translate-y-[3px]
+                  hover:shadow-[0_4px_12px_rgba(0,0,0,0.08)]
+                "
               >
-                {/* Icon */}
-                <div className="mb-[27px]">
+                {/* ================= ICON ================= */}
+
+                <div className="mb-[22px] sm:mb-[27px]">
                   <Icon
-                    size={43}
+                    size={39}
                     strokeWidth={2.3}
-                    className="text-[#5b74d1]"
+                    className="text-[#5b74d1] sm:w-[43px] sm:h-[43px]"
                   />
                 </div>
 
-                {/* Text */}
-                <p className="text-[13px] leading-[18px] text-[#273878]">
+                {/* ================= TEXT ================= */}
+
+                <p
+                  className="
+                    font-yantra
+                    text-[13px]
+                    leading-[18px]
+                    text-[#273878]
+                  "
+                >
                   {item.title}
                 </p>
 
-                <p className="text-[13px] leading-[18px] font-bold text-[#273878]">
+                <p
+                  className="
+                    font-yantra
+                    text-[13px]
+                    leading-[18px]
+                    font-bold
+                    text-[#273878]
+                  "
+                >
                   {item.highlight}
                 </p>
               </div>
             );
           })}
-
         </div>
       </div>
     </section>

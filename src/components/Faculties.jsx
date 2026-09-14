@@ -33,29 +33,83 @@ const Faculties = () => {
   ];
 
   return (
-    <section className="w-full bg-white py-[45px]">
-      <div className="max-w-[1050px] mx-auto">
+    <section className="w-full bg-white py-[40px] sm:py-[45px]">
+      <div
+        className="
+          w-full
+          max-w-[1050px]
+          mx-auto
+          px-5
+          sm:px-8
+          lg:px-0
+        "
+      >
         {/* ================= HEADING ================= */}
 
-        <h2 className="text-center text-[23px] leading-[30px] font-bold text-[#273878]">
+        <h2
+          className="
+            font-yantra
+            text-center
+            text-[21px]
+            sm:text-[23px]
+            leading-[28px]
+            sm:leading-[30px]
+            font-bold
+            text-[#273878]
+          "
+        >
           Faculties Of This <span className="text-[#fca311]">Program</span>
         </h2>
 
         {/* ================= FACULTY CARDS ================= */}
 
-        <div className="grid grid-cols-4 gap-[15px] mt-[43px]">
+        <div
+          className="
+            grid
+            grid-cols-1
+            sm:grid-cols-2
+            lg:grid-cols-4
+            gap-[15px]
+            mt-[30px]
+            sm:mt-[38px]
+            lg:mt-[43px]
+          "
+        >
           {facultyData.map((faculty, index) => (
             <div
               key={index}
-              className="h-[234px] rounded-[15px]
-              bg-white border border-[#e8e8e8]
-              shadow-[0_4px_10px_rgba(0,0,0,0.08)]
-              flex flex-col items-center
-              text-center px-[8px] pt-[20px]"
+              className="
+                w-full
+                h-[234px]
+                rounded-[15px]
+                bg-white
+                border
+                border-[#e8e8e8]
+                shadow-[0_4px_10px_rgba(0,0,0,0.08)]
+                flex
+                flex-col
+                items-center
+                text-center
+                px-[8px]
+                pt-[20px]
+                transition-transform
+                duration-200
+                hover:-translate-y-[3px]
+              "
             >
-              {/* Faculty Image */}
+              {/* ================= FACULTY IMAGE ================= */}
 
-              <div className="w-[72px] h-[72px] rounded-full overflow-hidden border border-[#273878]">
+              <div
+                className="
+                  w-[72px]
+                  h-[72px]
+                  rounded-full
+                  overflow-hidden
+                  border
+                  border-[#273878]
+                  shrink-0
+                "
+              >
                 <img
                   src={faculty.image}
                   alt={faculty.name}
@@ -63,29 +117,69 @@ const Faculties = () => {
                 />
               </div>
 
-              {/* Name */}
+              {/* ================= NAME ================= */}
 
-              <h3 className="mt-[12px] text-[12px] leading-[16px] font-bold text-black">
+              <h3
+                className="
+                  font-yantra
+                  mt-[12px]
+                  text-[12px]
+                  leading-[16px]
+                  font-bold
+                  text-black
+                "
+              >
                 {faculty.name}
               </h3>
 
-              {/* Description */}
+              {/* ================= DESCRIPTION ================= */}
 
-              <p className="mt-[1px] text-[12px] leading-[16px] text-black">
+              <p
+                className="
+                  font-yantra
+                  mt-[1px]
+                  text-[11px]
+                  sm:text-[12px]
+                  leading-[16px]
+                  text-black
+                "
+              >
                 {faculty.line1}
               </p>
 
-              <p className="text-[12px] leading-[16px] font-bold text-black">
+              <p
+                className="
+                  font-yantra
+                  text-[11px]
+                  sm:text-[12px]
+                  leading-[16px]
+                  font-bold
+                  text-black
+                "
+              >
                 {faculty.line2}
               </p>
 
-              {/* Logo */}
+              {/* ================= LOGO ================= */}
 
-              <div className="mt-[14px] h-[43px] w-[110px] flex items-center justify-center">
+              <div
+                className="
+                  mt-[14px]
+                  h-[43px]
+                  w-[110px]
+                  flex
+                  items-center
+                  justify-center
+                "
+              >
                 <img
                   src={faculty.logo}
                   alt=""
-                  className="max-w-full max-h-full object-contain"
+                  className="
+                    max-w-full
+                    max-h-full
+                    object-contain
+                  "
                 />
               </div>
             </div>
