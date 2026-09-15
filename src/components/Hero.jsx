@@ -9,11 +9,11 @@ import {
 
 const Hero = () => {
   return (
-    <section className="relative min-h-[525px] lg:min-h-[525px] overflow-hidden">
+    <section className="relative min-h-[525px] lg:min-h-[525px] overflow-visible">
       {/* ================= BACKGROUND IMAGE ================= */}
 
       <img
-        src="/images/hero-bg.png"
+        src="assets/images/bg.jpg"
         alt=""
         className="absolute inset-0 w-full h-full object-cover"
       />
@@ -36,7 +36,8 @@ const Hero = () => {
           pt-[35px]
           sm:pt-[40px]
           lg:pt-[45px]
-          pb-[190px]
+          pb-[200px]
+          sm:pb-[190px]
           lg:pb-[145px]
         "
       >
@@ -48,7 +49,8 @@ const Hero = () => {
             justify-between
             items-center
             lg:items-start
-            gap-[35px]
+            gap-[28px]
+            sm:gap-[35px]
             lg:gap-[45px]
           "
         >
@@ -59,14 +61,10 @@ const Hero = () => {
 
             <h1
               className="
-                font-yantra
-                text-[24px]
-                sm:text-[28px]
-                lg:text-[24px]
-                leading-[28px]
-                sm:leading-[32px]
-                lg:leading-[27px]
-                font-bold
+                font-inter
+                text-[28px]
+                leading-[32px]
+                font-[700]
                 text-center
                 lg:text-left
               "
@@ -80,12 +78,12 @@ const Hero = () => {
 
             <p
               className="
-                font-yantra
+                font-nunito
                 mt-[15px]
-                text-[13px]
-                sm:text-[14px]
+                text-[18px]
+                leading-[24px]
                 italic
-                font-semibold
+                font-[700]
                 text-center
                 lg:text-left
               "
@@ -98,12 +96,11 @@ const Hero = () => {
 
             <p
               className="
-                font-yantra
+                font-nunito
                 mt-[14px]
-                text-[12px]
-                sm:text-[13px]
-                lg:text-[14px]
-                leading-[17px]
+                text-[18px]
+                leading-[30px]
+                font-[400]
                 w-full
                 max-w-[550px]
                 mx-auto
@@ -148,10 +145,10 @@ const Hero = () => {
               >
                 <span
                   className="
-                    font-yantra
-                    text-[11px]
-                    sm:text-[13px]
-                    leading-[15px]
+                    font-nunito
+                    text-[18px]
+                    leading-[24px]
+                    font-[600]
                   "
                 >
                   Gain Expertise In Advanced Gen AI, Agentic AI & LLMs
@@ -214,10 +211,9 @@ const Hero = () => {
                   rounded-full
                   bg-[#8ca7ff]
                   text-white
-                  font-yantra
-                  font-semibold
-                  text-[13px]
-                  sm:text-[15px]
+                  font-inter
+                  font-[600]
+                  text-[20px]
                   hover:bg-[#7896f5]
                   transition
                 "
@@ -290,6 +286,8 @@ const Hero = () => {
             className="
               w-full
               max-w-[360px]
+              sm:max-w-[380px]
+              lg:max-w-none
               lg:w-[298px]
               bg-white
               rounded-[15px]
@@ -303,10 +301,11 @@ const Hero = () => {
           >
             <h2
               className="
-                font-yantra
+                font-inter
                 text-center
-                text-[16px]
-                font-bold
+                text-[20px]
+                leading-[26px]
+                font-[700]
                 text-black
                 mb-[22px]
               "
@@ -321,14 +320,15 @@ const Hero = () => {
                 type="text"
                 placeholder="First Name*"
                 className="
-                  font-yantra
+                  font-nunito
+                  font-[400]
                   w-1/2
                   h-[34px]
                   border
                   border-gray-300
                   rounded-[7px]
                   px-[11px]
-                  text-[12px]
+                  text-[16px]
                   outline-none
                   focus:border-[#273b87]
                 "
@@ -338,14 +338,15 @@ const Hero = () => {
                 type="text"
                 placeholder="Last Name"
                 className="
-                  font-yantra
+                  font-nunito
+                  font-[400]
                   w-1/2
                   h-[34px]
                   border
                   border-gray-300
                   rounded-[7px]
                   px-[11px]
-                  text-[12px]
+                  text-[16px]
                   outline-none
                   focus:border-[#273b87]
                 "
@@ -358,7 +359,8 @@ const Hero = () => {
               type="text"
               placeholder="Mobile*"
               className="
-                font-yantra
+                font-nunito
+                font-[400]
                 w-full
                 h-[34px]
                 mt-[7px]
@@ -366,7 +368,7 @@ const Hero = () => {
                 border-gray-300
                 rounded-[7px]
                 px-[11px]
-                text-[12px]
+                text-[16px]
                 outline-none
                 focus:border-[#273b87]
               "
@@ -378,7 +380,8 @@ const Hero = () => {
               type="email"
               placeholder="Email*"
               className="
-                font-yantra
+                font-nunito
+                font-[400]
                 w-full
                 h-[34px]
                 mt-[7px]
@@ -386,7 +389,7 @@ const Hero = () => {
                 border-gray-300
                 rounded-[7px]
                 px-[11px]
-                text-[12px]
+                text-[16px]
                 outline-none
                 focus:border-[#273b87]
               "
@@ -398,14 +401,15 @@ const Hero = () => {
               <select
                 className="
                   appearance-none
-                  font-yantra
+                  font-nunito
+                  font-[400]
                   w-full
                   h-[34px]
                   border
                   border-gray-300
                   rounded-[7px]
                   px-[11px]
-                  text-[12px]
+                  text-[16px]
                   text-gray-400
                   outline-none
                   bg-white
@@ -436,14 +440,15 @@ const Hero = () => {
               <select
                 className="
                   appearance-none
-                  font-yantra
+                  font-nunito
+                  font-[400]
                   w-full
                   h-[34px]
                   border
                   border-gray-300
                   rounded-[7px]
                   px-[11px]
-                  text-[12px]
+                  text-[16px]
                   text-gray-400
                   outline-none
                   bg-white
@@ -473,14 +478,15 @@ const Hero = () => {
               <select
                 className="
                   appearance-none
-                  font-yantra
+                  font-nunito
+                  font-[400]
                   w-full
                   h-[34px]
                   border
                   border-gray-300
                   rounded-[7px]
                   px-[11px]
-                  text-[12px]
+                  text-[16px]
                   text-gray-400
                   outline-none
                   bg-white
@@ -512,9 +518,9 @@ const Hero = () => {
                   rounded-full
                   bg-[#273b87]
                   text-white
-                  font-yantra
-                  font-semibold
-                  text-[15px]
+                  font-nunito
+                  font-[400]
+                  text-[16px]
                   hover:bg-[#1e2e72]
                   transition
                 "
@@ -579,16 +585,17 @@ const Hero = () => {
             className="
               w-full
               max-w-[498px]
-              h-[70px]
+              h-[76px]
               sm:h-[80px]
               lg:h-[89px]
-              rounded-[16px]
-              overflow-hidden
-              shadow-lg
+              shrink-0
+             
+            
+              
             "
           >
             <img
-              src="/images/iit-eict.png"
+              src="assets/images/grp.png"
               alt="IIT Roorkee and EICT Academy"
               className="w-full h-full object-contain"
             />
@@ -632,7 +639,7 @@ const Hero = () => {
               </div>
 
               <div>
-                <p className="font-yantra text-[12px]">Next Cohort</p>
+                <p className="font-yantra text-[11px]">Next Cohort</p>
 
                 <p className="font-yantra text-[13px] font-bold">10 Apr 2025</p>
               </div>
@@ -657,7 +664,7 @@ const Hero = () => {
               </div>
 
               <div>
-                <p className="font-yantra text-[12px]">Admission Deadline</p>
+                <p className="font-yantra text-[11px]">Admission Deadline</p>
 
                 <p className="font-yantra text-[13px] font-bold">10 Apr 2025</p>
               </div>

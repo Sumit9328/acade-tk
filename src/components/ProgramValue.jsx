@@ -56,8 +56,8 @@ const ProgramValue = () => {
 
           <h2
             className="
-              font-yantra
-              text-[22px]
+              font-inter
+              text-[28px]
               sm:text-[24px]
               leading-[29px]
               sm:leading-[32px]
@@ -100,12 +100,12 @@ const ProgramValue = () => {
                   <BriefcaseBusiness size={30} className="text-[#5b74d1]" />
                 </div>
 
-                <h3 className="font-yantra text-[14px] font-bold text-[#273878]">
+                <h3 className="font-inter text-[17px] font-bold text-[#273878]">
                   Live Interaction Sessions
                 </h3>
               </div>
 
-              <p className="font-yantra mt-[20px] sm:mt-[25px] text-[12px] leading-[17px] text-[#222]">
+              <p className="font-inter mt-[20px] sm:mt-[25px] text-[16px] leading-[20px] text-[#222]">
                 Join live sessions with industry experts to learn real
                 problem-solving skills.
               </p>
@@ -127,12 +127,12 @@ const ProgramValue = () => {
                   <BadgeCheck size={30} className="text-[#5b74d1]" />
                 </div>
 
-                <h3 className="font-yantra text-[14px] font-bold text-[#273878]">
+                <h3 className="font-inter text-[17px] font-bold text-[#273878]">
                   Prestigious Certification
                 </h3>
               </div>
 
-              <p className="font-yantra mt-[20px] text-[12px] leading-[17px] text-[#222]">
+              <p className="font-inter mt-[20px] text-[16px] leading-[20px] text-[#222]">
                 Earn an Advanced Data Science and Machine Learning certificate
                 from E&ICT IIT Roorkee and an Industrial Training Certificate
                 for real-world experience.

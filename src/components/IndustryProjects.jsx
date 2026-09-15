@@ -38,8 +38,8 @@ const IndustryProjects = () => {
         bg-gradient-to-r
         from-[#202f78]
         to-[#5c73d0]
-        py-[38px]
-        sm:py-[42px]
+        py-[30px]
+        sm:py-[38px]
         lg:py-[42px]
       "
     >
@@ -48,20 +48,20 @@ const IndustryProjects = () => {
       <div className="absolute top-0 right-0 pointer-events-none">
         <div
           className="
-            w-[220px]
-            sm:w-[300px]
+            w-[180px]
+            sm:w-[280px]
             lg:w-[400px]
-            h-[120px]
-            sm:h-[150px]
+            h-[110px]
+            sm:h-[140px]
             lg:h-[170px]
-            border-l-[60px]
-            sm:border-l-[80px]
+            border-l-[50px]
+            sm:border-l-[70px]
             lg:border-l-[100px]
-            border-r-[60px]
-            sm:border-r-[80px]
+            border-r-[50px]
+            sm:border-r-[70px]
             lg:border-r-[100px]
-            border-t-[50px]
-            sm:border-t-[60px]
+            border-t-[45px]
+            sm:border-t-[55px]
             lg:border-t-[70px]
             border-transparent
             border-t-[#6d82d5]/30
@@ -81,20 +81,19 @@ const IndustryProjects = () => {
           mx-auto
           px-5
           sm:px-8
-          lg:px-0
+          lg:px-5
+          xl:px-0
         "
       >
         {/* ================= HEADING ================= */}
 
         <h2
           className="
-            font-yantra
+            font-inter
+            font-[700]
             text-center
-            text-[22px]
-            sm:text-[24px]
-            leading-[28px]
-            sm:leading-[30px]
-            font-bold
+            text-[28px]
+            leading-[34px]
             text-white
           "
         >
@@ -103,14 +102,15 @@ const IndustryProjects = () => {
 
         <p
           className="
-            font-yantra
+            font-inter
+            font-[400]
             text-center
-            text-[12px]
-            leading-[16px]
+            text-[15px]
+            leading-[21px]
             text-white
             mt-[10px]
             sm:mt-[12px]
-            max-w-[600px]
+            max-w-[700px]
             mx-auto
           "
         >
@@ -129,8 +129,8 @@ const IndustryProjects = () => {
             sm:grid-cols-2
             lg:grid-cols-4
             gap-[15px]
-            mt-[30px]
-            sm:mt-[38px]
+            mt-[28px]
+            sm:mt-[35px]
             lg:mt-[44px]
           "
         >
@@ -151,7 +151,16 @@ const IndustryProjects = () => {
             >
               {/* Image */}
 
-              <div className="w-full h-[150px] sm:h-[125px] lg:h-[105px] overflow-hidden rounded-[8px]">
+              <div
+                className="
+                  w-full
+                  h-[180px]
+                  sm:h-[145px]
+                  lg:h-[105px]
+                  overflow-hidden
+                  rounded-[8px]
+                "
+              >
                 <img
                   src={project.image}
                   alt={project.title}
@@ -163,11 +172,11 @@ const IndustryProjects = () => {
 
               <h3
                 className="
-                  font-yantra
+                  font-inter
+                  font-[700]
                   mt-[12px]
-                  text-[13px]
-                  leading-[17px]
-                  font-bold
+                  text-[15px]
+                  leading-[20px]
                   text-black
                 "
               >
@@ -178,11 +187,11 @@ const IndustryProjects = () => {
 
               <p
                 className="
-                  font-yantra
+                  font-inter
+                  font-[400]
                   mt-[7px]
-                  text-[11px]
-                  sm:text-[12px]
-                  leading-[15px]
+                  text-[15px]
+                  leading-[21px]
                   text-[#222]
                 "
               >
@@ -202,7 +211,7 @@ const IndustryProjects = () => {
             items-center
             justify-between
             gap-[18px]
-            mt-[20px]
+            mt-[22px]
           "
         >
           {/* Download */}
@@ -216,9 +225,9 @@ const IndustryProjects = () => {
                 rounded-full
                 bg-[#fca311]
                 text-white
-                font-yantra
-                font-semibold
-                text-[14px]
+                font-inter
+                font-[700]
+                text-[15px]
                 hover:bg-[#ed9400]
                 transition
               "
@@ -280,8 +289,8 @@ const IndustryProjects = () => {
             <div
               className="
                 relative
-                w-[150px]
-                sm:w-[200px]
+                w-[130px]
+                sm:w-[190px]
                 lg:w-[245px]
                 h-[2px]
                 bg-white/60
@@ -292,8 +301,8 @@ const IndustryProjects = () => {
                   absolute
                   left-0
                   top-0
-                  w-[55px]
-                  sm:w-[70px]
+                  w-[48px]
+                  sm:w-[65px]
                   lg:w-[90px]
                   h-[2px]
                   bg-[#fca311]

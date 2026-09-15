@@ -70,8 +70,8 @@ const CoreUSPs = () => {
 
         <h2
           className="
-            font-yantra
-            text-[26px]
+            font-inter
+            text-[38px]
             sm:text-[30px]
             leading-[31px]
             sm:leading-[36px]
@@ -138,7 +138,7 @@ const CoreUSPs = () => {
                 <p
                   className="
                     font-yantra
-                    text-[13px]
+                    text-[14px]
                     leading-[18px]
                     text-[#273878]
                   "
@@ -149,7 +149,7 @@ const CoreUSPs = () => {
                 <p
                   className="
                     font-yantra
-                    text-[13px]
+                    text-[16px]
                     leading-[18px]
                     font-bold
                     text-[#273878]

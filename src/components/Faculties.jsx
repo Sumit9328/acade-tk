@@ -33,7 +33,7 @@ const Faculties = () => {
   ];
 
   return (
-    <section className="w-full bg-white py-[40px] sm:py-[45px]">
+    <section className="w-full bg-white py-[35px] sm:py-[45px] lg:py-[45px]">
       <div
         className="
           w-full
@@ -41,20 +41,19 @@ const Faculties = () => {
           mx-auto
           px-5
           sm:px-8
-          lg:px-0
+          lg:px-5
+          xl:px-0
         "
       >
         {/* ================= HEADING ================= */}
 
         <h2
           className="
-            font-yantra
+            font-inter
+            font-[700]
             text-center
-            text-[21px]
-            sm:text-[23px]
-            leading-[28px]
-            sm:leading-[30px]
-            font-bold
+            text-[28px]
+            leading-[34px]
             text-[#273878]
           "
         >
@@ -70,7 +69,7 @@ const Faculties = () => {
             sm:grid-cols-2
             lg:grid-cols-4
             gap-[15px]
-            mt-[30px]
+            mt-[28px]
             sm:mt-[38px]
             lg:mt-[43px]
           "
@@ -80,7 +79,7 @@ const Faculties = () => {
               key={index}
               className="
                 w-full
-                h-[234px]
+                min-h-[234px]
                 rounded-[15px]
                 bg-white
                 border
@@ -90,8 +89,9 @@ const Faculties = () => {
                 flex-col
                 items-center
                 text-center
-                px-[8px]
+                px-[10px]
                 pt-[20px]
+                pb-[15px]
                 transition-transform
                 duration-200
                 hover:-translate-y-[3px]
@@ -121,11 +121,11 @@ const Faculties = () => {
 
               <h3
                 className="
-                  font-yantra
+                  font-inter
+                  font-[700]
                   mt-[12px]
-                  text-[12px]
-                  leading-[16px]
-                  font-bold
+                  text-[15px]
+                  leading-[20px]
                   text-black
                 "
               >
@@ -136,11 +136,11 @@ const Faculties = () => {
 
               <p
                 className="
-                  font-yantra
-                  mt-[1px]
-                  text-[11px]
-                  sm:text-[12px]
-                  leading-[16px]
+                  font-inter
+                  font-[400]
+                  mt-[2px]
+                  text-[15px]
+                  leading-[20px]
                   text-black
                 "
               >
@@ -149,11 +149,10 @@ const Faculties = () => {
 
               <p
                 className="
-                  font-yantra
-                  text-[11px]
-                  sm:text-[12px]
-                  leading-[16px]
-                  font-bold
+                  font-inter
+                  font-[700]
+                  text-[15px]
+                  leading-[20px]
                   text-black
                 "
               >
@@ -175,11 +174,7 @@ const Faculties = () => {
                 <img
                   src={faculty.logo}
                   alt=""
-                  className="
-                    max-w-full
-                    max-h-full
-                    object-contain
-                  "
+                  className="max-w-full max-h-full object-contain"
                 />
               </div>
             </div>

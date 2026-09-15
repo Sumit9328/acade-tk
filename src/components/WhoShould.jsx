@@ -50,7 +50,17 @@ const WhoShould = () => {
   ];
 
   return (
-    <section className="relative w-full overflow-hidden bg-[#f0f2ff] py-[45px] sm:py-[50px] lg:py-[45px]">
+    <section
+      className="
+        relative
+        w-full
+        overflow-hidden
+        bg-[#f0f2ff]
+        py-[35px]
+        sm:py-[45px]
+        lg:py-[45px]
+      "
+    >
       {/* ================= BACKGROUND DECORATION ================= */}
 
       {/* Right Lines */}
@@ -63,29 +73,31 @@ const WhoShould = () => {
 
       {/* Bottom Left Lines */}
       <div className="absolute bottom-[18px] left-0 flex flex-col gap-[6px] sm:gap-[8px] opacity-70">
-        <div className="w-[220px] sm:w-[300px] lg:w-[348px] h-[9px] sm:h-[13px] rounded-r-full bg-[#dce3ff]" />
-        <div className="w-[185px] sm:w-[250px] lg:w-[292px] h-[9px] sm:h-[13px] rounded-r-full bg-[#dce3ff]" />
-        <div className="w-[140px] sm:w-[190px] lg:w-[222px] h-[9px] sm:h-[13px] rounded-r-full bg-[#dce3ff]" />
+        <div className="w-[180px] sm:w-[300px] lg:w-[348px] h-[9px] sm:h-[13px] rounded-r-full bg-[#dce3ff]" />
+        <div className="w-[150px] sm:w-[250px] lg:w-[292px] h-[9px] sm:h-[13px] rounded-r-full bg-[#dce3ff]" />
+        <div className="w-[115px] sm:w-[190px] lg:w-[222px] h-[9px] sm:h-[13px] rounded-r-full bg-[#dce3ff]" />
       </div>
 
       {/* ================= MAIN CONTENT ================= */}
 
       <div
         className="
-          relative z-10
+          relative
+          z-10
           w-full
           max-w-[1050px]
           mx-auto
           px-5
           sm:px-8
-          lg:px-0
+          lg:px-5
+          xl:px-0
           flex
           flex-col
           lg:flex-row
           items-center
-          lg:items-center
           justify-between
-          gap-[35px]
+          gap-[30px]
+          sm:gap-[35px]
           lg:gap-0
         "
       >
@@ -94,14 +106,11 @@ const WhoShould = () => {
         <div className="w-full lg:w-[385px] text-center lg:text-left">
           <h2
             className="
-              font-yantra
-              text-[32px]
-              sm:text-[38px]
-              lg:text-[40px]
-              leading-[36px]
-              sm:leading-[42px]
-              lg:leading-[44px]
-              font-bold
+              font-inter
+              font-[700]
+              text-[28px]
+              leading-[34px]
+              sm:leading-[36px]
               text-[#263675]
             "
           >
@@ -112,17 +121,15 @@ const WhoShould = () => {
 
           <p
             className="
-              font-yantra
+              font-inter
+              font-[400]
               mt-[12px]
               w-full
               max-w-[345px]
               mx-auto
               lg:mx-0
-              text-[12px]
-              sm:text-[13px]
-              lg:text-[11px]
-              leading-[17px]
-              lg:leading-[15px]
+              text-[15px]
+              leading-[21px]
               text-[#222]
             "
           >
@@ -140,9 +147,9 @@ const WhoShould = () => {
                 rounded-full
                 bg-[#273878]
                 text-white
-                font-yantra
-                font-semibold
-                text-[14px]
+                font-inter
+                font-[700]
+                text-[15px]
                 hover:bg-[#1e2d65]
                 transition
               "
@@ -190,8 +197,8 @@ const WhoShould = () => {
                 key={index}
                 className={`
                   w-full
-                  h-[130px]
-                  sm:h-[141px]
+                  min-h-[130px]
+                  sm:min-h-[141px]
                   rounded-[9px]
                   flex
                   flex-col
@@ -223,12 +230,10 @@ const WhoShould = () => {
 
                 <p
                   className="
-                    font-yantra
-                    text-[12px]
-                    sm:text-[13px]
-                    leading-[15px]
-                    sm:leading-[16px]
-                    font-semibold
+                    font-inter
+                    font-[700]
+                    text-[15px]
+                    leading-[20px]
                     px-[8px]
                   "
                 >

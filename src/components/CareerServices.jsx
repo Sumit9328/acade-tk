@@ -12,22 +12,10 @@ const CareerServices = () => {
   const [activeTab, setActiveTab] = useState(0);
 
   const tabs = [
-    {
-      title: "Guaranteed Internship",
-      icon: Building2,
-    },
-    {
-      title: "Placement Support",
-      icon: Handshake,
-    },
-    {
-      title: "Interview Preparation",
-      icon: UserRoundCheck,
-    },
-    {
-      title: "Profile Building",
-      icon: Award,
-    },
+    { title: "Guaranteed Internship", icon: Building2 },
+    { title: "Placement Support", icon: Handshake },
+    { title: "Interview Preparation", icon: UserRoundCheck },
+    { title: "Profile Building", icon: Award },
   ];
 
   const services = [
@@ -60,7 +48,7 @@ const CareerServices = () => {
   ];
 
   return (
-    <section className="w-full bg-[#f0f2ff] py-[40px] sm:py-[45px]">
+    <section className="w-full bg-[#f0f2ff] py-[35px] sm:py-[45px] lg:py-[45px]">
       <div
         className="
           w-full
@@ -68,11 +56,13 @@ const CareerServices = () => {
           mx-auto
           px-5
           sm:px-8
-          lg:px-0
+          lg:px-5
+          xl:px-0
           flex
           flex-col
           lg:flex-row
           gap-[25px]
+          lg:gap-[25px]
         "
       >
         {/* ================= LEFT IMAGE ================= */}
@@ -92,12 +82,7 @@ const CareerServices = () => {
           <img
             src="/images/career-services.png"
             alt="Career Services"
-            className="
-              w-full
-              h-full
-              object-cover
-              rounded-[22px]
-            "
+            className="w-full h-full object-cover rounded-[22px]"
           />
 
           {/* Floating Icon */}
@@ -132,17 +117,15 @@ const CareerServices = () => {
 
         {/* ================= RIGHT CONTENT ================= */}
 
-        <div className="w-full flex-1">
+        <div className="w-full flex-1 min-w-0">
           {/* Heading */}
 
           <h2
             className="
-              font-yantra
-              text-[23px]
-              sm:text-[25px]
-              leading-[30px]
-              sm:leading-[32px]
-              font-bold
+              font-inter
+              font-[700]
+              text-[28px]
+              leading-[34px]
               text-[#273878]
               text-center
               lg:text-left
@@ -160,15 +143,14 @@ const CareerServices = () => {
               sm:mt-[40px]
               min-h-[90px]
               bg-[#273878]
-              rounded-[30px]
-              sm:rounded-l-[50px]
-              sm:rounded-r-[50px]
+              rounded-[25px]
+              sm:rounded-[50px]
               grid
               grid-cols-2
               lg:flex
               lg:items-center
               lg:justify-between
-              px-[10px]
+              px-[8px]
               sm:px-[20px]
               py-[8px]
               sm:py-0
@@ -184,7 +166,7 @@ const CareerServices = () => {
                   onClick={() => setActiveTab(index)}
                   className="
                     relative
-                    h-[75px]
+                    min-h-[75px]
                     sm:h-[80px]
                     lg:h-[90px]
                     lg:flex-1
@@ -254,13 +236,10 @@ const CareerServices = () => {
 
                   <span
                     className={`
-                      font-yantra
-                      text-[10px]
-                      sm:text-[11px]
-                      lg:text-[12px]
-                      leading-[13px]
-                      sm:leading-[15px]
-                      font-semibold
+                      font-inter
+                      font-[700]
+                      text-[15px]
+                      leading-[20px]
                       text-center
                       px-[4px]
                       ${isActive ? "mt-[24px] sm:mt-[30px] lg:mt-[35px]" : ""}
@@ -334,14 +313,12 @@ const CareerServices = () => {
 
                   <h3
                     className="
-                      font-yantra
+                      font-inter
+                      font-[700]
                       mt-[15px]
                       sm:mt-[18px]
                       text-[15px]
-                      sm:text-[16px]
-                      leading-[18px]
-                      sm:leading-[19px]
-                      font-bold
+                      leading-[20px]
                       text-black
                     "
                   >
@@ -352,13 +329,12 @@ const CareerServices = () => {
 
                   <p
                     className="
-                      font-yantra
+                      font-inter
+                      font-[400]
                       mt-[9px]
                       sm:mt-[11px]
-                      text-[11px]
-                      sm:text-[12px]
-                      leading-[16px]
-                      sm:leading-[17px]
+                      text-[15px]
+                      leading-[21px]
                       text-black
                     "
                   >
